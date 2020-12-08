@@ -13,14 +13,14 @@ const styles = {
 const tickets = [
   {
     name: 'General Admission',
-    id: 'general'
+    id: 'general',
     price: 45,
     fee: 4.37,
     tax: 4.2
   },
   {
     name: 'VIP',
-    id: 'vip'
+    id: 'vip',
     price: 80,
     fee: 6.5,
     tax: 7.35
@@ -30,14 +30,14 @@ const tickets = [
 // Not sure if this is the right choice
 const TicketContext = React.createContext();
 // TODO: add in state handler to collect numbers
-const TicketSelection = Reaact.createContext();
+const TicketSelectionContext = Reaact.createContext();
 
 // TODO: add image from the event API
 export default function Checkout() {
   return(
     <div role="dialog" aria-labelledby="checkout" style={styles}>
       <TicketContext.Provider value={tickets}>
-        <TicketSelection.Provider value={}>
+        <TicketSelectionContext.Provider value={null}>
           <TicketSelection />
           <div style={{ width: '40%'}}>
             <picture>
@@ -45,7 +45,7 @@ export default function Checkout() {
               <img style={{ width: '100%' }} />
             </picture>
           </div>
-        </TicketSelection.Provider>
+        </TicketSelectionContext.Provider>
       </TicketContext.Provider>
     </div>
   )
