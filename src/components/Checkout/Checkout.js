@@ -28,9 +28,9 @@ const tickets = [
 ];
 
 // Not sure if this is the right choice
-const TicketContext = React.createContext();
+const TicketContext = createContext();
 // TODO: add in state handler to collect numbers
-const TicketSelectionContext = Reaact.createContext();
+const TicketSelectionContext = createContext();
 
 // TODO: add image from the event API
 export default function Checkout() {

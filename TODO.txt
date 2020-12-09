@@ -1,0 +1,29 @@
+1. Display the name, data, image from the event object
+  1.1 Connect to the API
+  1.2 Store the info in context
+
+2. List ticket classes available for purchase
+  2.1 Get ticket info from API
+
+3. Enable selection of 1-10 tickets
+  3.1 Create form
+  3.2 Add Inputs
+  3.3 Add Change Handler to display info
+
+4. Dynamically update tickets in sidebar
+  4.1 Create sidebar
+  4.2 Display tickets
+  4.3 Add cost and fees
+  4.4 Show total
+
+5. Post purchase request
+  5.1 Make API mock for POST
+  5.2 Send name, email, cost breakdown
+
+6. Navigate to confirmation screen
+  6.1 Create confirmation screen
+  6.2 Display success message
+
+7. Make things stylish
+
+8. Come up with one thing to improve the checkout flow
